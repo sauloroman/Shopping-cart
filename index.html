@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ========== FUENTES ================= -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anek+Odia:wght@400;600;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet"> 
+
+  <!-- ========== ICONOS ================= -->
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+  <!-- ========== ESTILOS CSS PERSONALIZADOS ================= -->
+  <link rel="stylesheet" href="/Css/styles.css" />
+  <link rel="stylesheet" href="/Css/queries.css" />
+
+  <link rel="icon" href="/img/bxs-shopping-bag.png" type="image/png" />
+
+  <title>Carrito de compras</title>
+</head>
+<body>
+  
+  <header class="header">
+    <div class="header__box">
+
+      <div class="img__box">
+        <a href="#">SRSN</a>
+      </div>
+
+      <div class="icon__box">
+        <i class='bx bx-shopping-bag header__icon btnPanel'></i>
+      </div>
+    </div>
+
+    <div class="panel" id="panel">   
+      <div class="panel__buttons">
+        <h2 class="heading__secondary">YOUR PURCHASE</h2>
+        <i class='bx bx-x-circle panel__logo btnPanel'></i>
+      </div>
+
+      <p class="panel__considerations">If you want to change the amount of any product, you must delete the product first.</p>
+      <a href="#" class="delete-all">Delete All</a>
+      
+
+      <div class="resultsBox">
+        <ul class="product-item__list" id="product-item__list">
+          <!-- Aqui se insertan los items de los productos -->
+        </ul>
+      </div>
+
+      <div class="product__total">
+        <!-- Aqui se inserta el total -->
+      </div>
+
+    </div>  
+  </header>
+
+
+  <main>
+    <section class="section__gallery">
+
+      <div class="container">
+        <h1 class="heading__primary">Get your articles</h1>
+      </div>
+
+      <div class="container">
+
+        <div class="gallery">
+          <figure class="gallery__img-box">
+            <img class="gallery__img" src="/img/product1.jpg" alt="" />
+            
+            <div class="gallery__info">
+              <p class="gallery__title">AEROREADY SHIRT</p>
+              <div class="gallery__data">
+                <p class="gallery__price">$<span>24.99</span></p>
+                <input type="number" min="1" required/>
+                <i class='bx bx-shopping-bag gallery__icon agregar' data-id="1" ></i>
+              </div>
+            </div>
+
+          </figure>
+
+          <figure class="gallery__img-box">
+            <img class="gallery__img" src="/img/product2.jpg" alt="" />
+            
+            <div class="gallery__info">
+              <p class="gallery__title">WIRELESS EARBUDS</p>
+              <div class="gallery__data">
+                <p class="gallery__price">$<span>99.99</span></p>
+                <input type="number" min="1" required/>
+                <i class='bx bx-shopping-bag gallery__icon agregar' data-id="2"  ></i>
+              </div>
+            </div>
+
+          </figure>
+
+          <figure class="gallery__img-box">
+            <img class="gallery__img" src="/img/product3.jpg" alt="" />
+            
+            <div class="gallery__info">
+              <p class="gallery__title">HOODED PARKA</p>
+              <div class="gallery__data">
+                <p class="gallery__price">$<span>49.99</span></p>
+                <input type="number" min="1" required/>
+                <i class='bx bx-shopping-bag gallery__icon agregar' data-id="3" ></i>
+              </div>
+            </div>
+
+          </figure>
+
+          <figure class="gallery__img-box">
+            <img class="gallery__img" src="/img/product4.jpg" alt="" />
+
+            <div class="gallery__info">
+              <p class="gallery__title">METAL BOTTLE</p>
+            <div class="gallery__data">
+              <p class="gallery__price">$<span>29.99</span></p>
+              <input type="number" min="1" required/>
+              <i class='bx bx-shopping-bag gallery__icon agregar' data-id="4" ></i>
+            </div>
+            </div>
+
+          </figure>
+
+          <figure class="gallery__img-box">
+            <img class="gallery__img" src="/img/product5.jpg" alt="" />
+            
+            <div class="gallery__info">
+              <p class="gallery__title">METAL SUNGLASSES</p>
+            <div class="gallery__data">
+              <p class="gallery__price">$<span>49.99</span></p>
+              <input type="number" min="1" required/>
+              <i class='bx bx-shopping-bag gallery__icon agregar' data-id="5" ></i>
+            </div>
+            </div>
+
+          </figure>
+
+          <figure class="gallery__img-box">
+            <img class="gallery__img" src="/img/product6.jpg" alt="" />
+
+            <div class="gallery__info">
+              <p class="gallery__title">BACK CAP</p>
+            <div class="gallery__data">
+              <p class="gallery__price">$<span>69.99</span></p>
+              <input type="number" min="1" required/>
+              <i class='bx bx-shopping-bag gallery__icon agregar' data-id="6" ></i>
+            </div>
+            </div>
+
+          </figure>
+
+          <figure class="gallery__img-box">
+            <img class="gallery__img" src="/img/product7.jpg" alt="" />
+
+            <div class="gallery__info">
+              <p class="gallery__title">BACKPACK</p>
+              <div class="gallery__data">
+                <p class="gallery__price">$<span>89.99</span></p>
+                <input type="number" min="1" required/>
+                <i class='bx bx-shopping-bag gallery__icon agregar' data-id="7"  ></i>
+              </div>
+            </div>
+
+          </figure>
+
+          <figure class="gallery__img-box">
+            <img class="gallery__img" src="/img/product8.jpg" alt="" />
+            
+            <div class="gallery__info">
+              <p class="gallery__title">BLUE SNEAKERS</p>
+            <div class="gallery__data">
+              <p class="gallery__price">$<span>119.99</span></p>
+              <input type="number" min="1" required/>
+              <i class='bx bx-shopping-bag gallery__icon agregar' data-id="8" ></i>
+            </div>
+            </div>
+
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <div class="alerta">
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>Saulo Román Santillán Nava &copy;</p>
+    <p id="year"></p>
+  </footer>
+
+  <script src="/app.js"></script>
+</body>
+</html>
